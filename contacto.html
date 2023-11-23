@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <title>Elegancia capilar</title>
+    <link rel="icon" href="./img/icons8-peluqueria-50.png" type="image/x-icon">
+    <link rel="icon" href="./img/icons8-peluqueria-50.png" type="image/x-icon">
+    <!---Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto+Condensed:wght@300&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <style>
+        /*General*/
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #2c2239;
+            color: #b66eba;
+            width: 90%;
+            margin: 0px auto;
+        }
+
+        /*header*/
+        header {
+            width: 100%;
+            height: 250px;
+            background-image: url(img/peluqueria-ismael-ayala-inflaciom-javier-vela-15.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 50px;
+            color: #4b3459;
+            font-family: 'Young Serif', serif;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            padding-top: 40px;
+            text-shadow: 0px 2px 1px #333333;
+        }
+
+        /*Menu de navegacion del header*/
+        nav {
+            width: 962px;
+            height: 55px;
+            margin: 0px auto;
+            background-color: #4b3459;
+            box-shadow: 0px 0px 2px grey;
+            margin-top: 68px;
+        }
+
+        nav ul {
+            list-style: none;
+
+        }
+
+        nav a {
+            display: block;
+            padding-left: 9.65%;
+            padding-right: 81px;
+            color: #b66eba;
+            line-height: 55px;
+            float: left;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #774d83;
+        }
+
+        footer {
+            width: 90%;
+            margin: 0px auto;
+            text-align: center;
+            position: absolute;
+            bottom: 0px;
+            border-top: 1px solid grey;
+            padding-bottom: 10px;
+            color: #b66eba;
+
+        }
+
+        footer p {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 50px;
+            margin-top: 20px;
+            
+        }
+
+        form {
+            font-size: 20px;
+            letter-spacing: 2px;
+            
+        }
+
+        p, input {
+            margin: 10px;
+        }
+
+        #telf{
+            margin-top: 30px;
+        }
+        input, textarea {
+            background-color: gray;
+        }
+
+        button {
+            width: 75px;
+        }
+
+        button:hover {
+            color: #b66eba;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Elegancia capilar</h1>
+
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./gallery.html">GALERIA</a></li>
+                <li><a href="./ubi.html">UBICACION</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <center>
+        <h2>Formulario de contacto</h2>
+        <form action="contacto">
+            <p>
+                Nombre:<input type="text" name="Nombre"  pattern="[A-Za-z]" title="Letas en mayuscula y minuscula">
+            </p>
+            <p>
+                Apellidos:<input type="text" name="Apellidos"  pattern="[A-Za-z]" title="Letas en mayuscula y minuscula">
+            </p>
+            <p>
+                Sexo:<input type="radio" name="sexo" value="hombre" required> hombre
+                <input type="radio" name="sexo" value="mujer" required> mujer
+            </p>
+            <p>
+                Correo <input type="email" name="Correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Debe contener tres cadenas separadas por un @ y un punto">
+            </p>
+            <p>
+                Comentario: <textarea name="Descripción"></textarea>
+            </p>
+
+        </form>
+        <button type="button">Enviar</button>
+        <br>
+        <p id="telf">Telefono de la empresa: <strong>+34 161617</strong></p>
+    </center>
+    <footer>
+        <p>Modulo de aplicaciones web del curso smra; hecho por Daniel Fernández Villanueva &#128516;  <a href="https://github.com/blxxdyclxck/blxxdyclxck.github.io">GITHUB</a></p>
+        <link rel="icon" href="./img/icons8-peluqueria-50.png" type="image/x-icon">
+    </footer>
+</body>
+
+</html>
